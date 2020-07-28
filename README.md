@@ -20,7 +20,6 @@
  3. 无缝结合Retrofit框架，进行统一回调管理
  4. 不使用RxJava进行数据转换处理，主要是RxJava接入需要成本，会产生重度依赖关系（除了Retrofit和OkHttp3必须依赖，其他三方库需要尽量避免再依赖）
 
-
 ## 缺点
 
  * 基于Retrofit框架进行开发，所以受限于Retrofit
