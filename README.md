@@ -25,7 +25,7 @@
  * 基于Retrofit框架进行开发，所以受限于Retrofit
 
 ### 使用库注意事项
- * [Todo](http://git.okjiaoyu.cn/stu/httpretrofitwrapper/blob/master/document/todo.md)
+ * [Todo](https://github.com/18511084155/HttpRetrofitWrapper/blob/master/document/todo.md)
 
 
 ### 示例介绍
@@ -42,7 +42,7 @@
 4. 支持模块化配置
 
 ### 演示下载
-[*Sample Apk*](http://git.okjiaoyu.cn/stu/httpretrofitwrapper/raw/master/apk/sample-debug.apk)
+[*Sample Apk*](https://github.com/18511084155/HttpRetrofitWrapper/raw/master/apk/sample-debug.apk)
 
 
 ### 如何接入
@@ -214,10 +214,8 @@ dependencies {
  
 ##### 3.技术难点思路描述
 
-* [技术难点思路](http://git.okjiaoyu.cn/stu/httpretrofitwrapper/blob/master/document/help.md)
+* [技术难点思路](https://github.com/18511084155/HttpRetrofitWrapper/blob/master/document/help.md)
 
-
-![](http://git.okjiaoyu.cn/stu/httpretrofitwrapper/raw/master/image/author.png)
     
 
 
