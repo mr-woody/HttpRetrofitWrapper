@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+android {
+    compileOptions.encoding = "UTF-8"
+    compileSdkVersion androids.compileSdkVersion
+    defaultConfig {
+        minSdkVersion androids.minSdkVersion
+        targetSdkVersion androids.targetSdkVersion
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleDependency
+    compileOnly "com.android.support:support-annotations:${versions.supportLibraryVersion}"
+    compileOnly 'android.arch.lifecycle:common:1.1.1'
+    api 'com.squareup.retrofit2:retrofit:2.6.1'
+    api 'com.squareup.okhttp3:logging-interceptor:3.12.0'
+
+}
+
+ext {
+    //library
+    pom_project = [
+            version : '1.0.0-SNAPSHOT',
+            group_id : "com.woodys.http.wrapper",
+            artifact_id : "library",
+            description : "Android http library"
+    ]
+}
+
+apply from: "../upload.gradle"

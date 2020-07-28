@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mockModeValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#666363"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:padding="5dp"
+        android:text="no content"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/getMockByUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取指定url对应的Mock数据"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/getMockByValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取指定value对应的Mock数据"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/getMockByAssets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取指定assets对应的Mock数据"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/closeMockSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭Mock支持场景(全局生效)"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/openMockSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启Mock支持场景(全局生效)"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
