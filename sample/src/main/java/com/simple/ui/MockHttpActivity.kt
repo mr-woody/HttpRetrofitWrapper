@@ -1,6 +1,7 @@
 package com.simple.ui
 
 import android.os.Bundle
+import com.cz.android.sample.api.RefRegister
 import com.woodys.http.RetrofitWrapperManager
 import com.woodys.http.core.Call
 import com.woodys.http.core.exception.HttpError
@@ -12,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_mock_http_view.*
 import okhttp3.ResponseBody
 import retrofit2.Response
 
+@RefRegister(title=R.string.general_mock_sample,desc=R.string.general_mock_sample_desc,category = R.string.general_category,priority = 3)
 class MockHttpActivity : BaseSampleAppCompatActivity() {
     override fun onActivityCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_mock_http_view)

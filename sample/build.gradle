@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'sample'
 
 android {
     compileOptions.encoding = "UTF-8"
@@ -67,9 +68,7 @@ dependencies {
     implementation 'com.lzy.widget:ninegridview:0.2.1'
 
 
-    implementation 'com.okay.sample.template:sample-template:1.1.2'
-    kapt "com.okay.sample.template.annotation.processor:processor-library:1.0.1"
-    annotationProcessor "com.okay.sample.template.annotation.processor:processor-library:1.0.1"
+    implementation "com.github.momodae.AndroidSampleLibrary:library-appcompat:$sample_version"
 
     implementation project(':library')
 }

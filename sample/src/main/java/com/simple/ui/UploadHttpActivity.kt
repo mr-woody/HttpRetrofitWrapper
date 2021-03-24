@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.text.format.Formatter
 import android.util.Log
 import android.widget.Toast
+import com.cz.android.sample.api.RefCategory
+import com.cz.android.sample.api.RefRegister
 import com.lzy.imagepicker.ImagePicker
 import com.lzy.imagepicker.bean.ImageItem
 import com.lzy.imagepicker.ui.ImageGridActivity
@@ -33,6 +35,8 @@ import java.text.NumberFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
+@RefCategory(title=R.string.general_upload_category,desc = R.string.general_upload_category_desc, priority = 3)
+@RefRegister(title=R.string.general_upload_sample,desc=R.string.general_upload_sample_desc,category = R.string.general_upload_category,priority = 1)
 class UploadHttpActivity : BaseSampleAppCompatActivity() {
     private var imageItems: ArrayList<ImageItem> = ArrayList<ImageItem>()
     private var numberFormat: NumberFormat? = null

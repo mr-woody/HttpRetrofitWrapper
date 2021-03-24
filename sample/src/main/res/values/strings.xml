@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">HttpRetrofitWrapper</string>
+
+    <string name="general_category">常规请求调用方式示例</string>
+    <string name="general_category_desc">常规请求(公共请求头和参数)、同步请求、Mock演示</string>
+    <string name="general_http_sample">常规请求(公共请求头和参数)</string>
+    <string name="general_http_sample_desc">演示常规的post、get(配合公共请求头和参数)</string>
+    <string name="general_sync_sample">同步请求</string>
+    <string name="general_sync_sample_desc">会阻塞主线程，需要在子线程中进行创建</string>
+    <string name="general_mock_sample">Mock演示</string>
+    <string name="general_mock_sample_desc">Mock数据的使用方式</string>
+
+    <string name="general_download_category">通用下载文件操作示例</string>
+    <string name="general_download_category_desc">演示下载相关实例</string>
+    <string name="general_download_sample">下载文件操作</string>
+    <string name="general_download_sample_desc">演示文件下载过程</string>
+    <string name="general_download_image_sample">下载图片操作</string>
+    <string name="general_download_image_sample_desc">演示图片下载过程</string>
+
+    <string name="general_upload_category">通用上传文件操作示例</string>
+    <string name="general_upload_category_desc">演示项目中头像上传和第三方图片上传</string>
+    <string name="general_upload_sample">上传文件操作(头像上传)</string>
+    <string name="general_upload_sample_desc">演示文件上传过程</string>
+    <string name="general_upload_image_sample">上传图片操作</string>
+    <string name="general_upload_image_sample_desc">演示图片上传过程</string>
+
+    <string name="other">Others</string>
+    <string name="other_desc">一些其他的自定义测试示例</string>
+    <string name="custom_module_sample">支持模块化配置</string>
+    <string name="custom_module_sample_desc">支持创建多个RetrofitWrapper，并且可以自定义ConfigBuilder</string>
 </resources>

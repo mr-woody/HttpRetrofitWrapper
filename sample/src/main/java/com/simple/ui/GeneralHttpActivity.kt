@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.cz.android.sample.api.RefCategory
+import com.cz.android.sample.api.RefRegister
 import com.woodys.http.RetrofitWrapperManager
 import com.woodys.http.core.Call
 import com.woodys.http.core.exception.HttpError
@@ -23,6 +25,8 @@ import retrofit2.Response
 /**
  * 演示常规的post、get(配合公共请求头和参数)
  */
+@RefCategory(title=R.string.general_category,desc = R.string.general_category_desc, priority = 1)
+@RefRegister(title=R.string.general_http_sample,desc=R.string.general_http_sample_desc,category = R.string.general_category,priority = 1)
 class GeneralHttpActivity : BaseSampleAppCompatActivity(){
 
     override fun onActivityCreate(savedInstanceState: Bundle?) {

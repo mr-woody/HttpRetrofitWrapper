@@ -1,6 +1,8 @@
 package com.simple.ui
 
 import android.os.Bundle
+import com.cz.android.sample.api.RefCategory
+import com.cz.android.sample.api.RefRegister
 import com.woodys.http.RetrofitWrapperManager
 import com.woodys.http.core.Call
 import com.woodys.http.core.callback.CommonParamsCallback
@@ -15,6 +17,8 @@ import okhttp3.Request
 import okhttp3.ResponseBody
 import retrofit2.Response
 
+@RefCategory(title=R.string.other,desc = R.string.other_desc, priority = 4)
+@RefRegister(title=R.string.custom_module_sample,desc=R.string.custom_module_sample_desc,category = R.string.other,priority = 1)
 class ModuleHttpActivity : BaseSampleAppCompatActivity() {
     override fun onActivityCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_moudle_http_view)

@@ -2,14 +2,15 @@ package com.simple;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.cz.android.sample.api.Exclude;
 import com.woodys.http.core.exception.HttpError;
-import com.okay.sampletamplate.SampleAppCompatActivity;
 import com.simple.json.GsonUtils;
 import com.simple.net.callback.ILoadingView;
 import com.simple.ui.progress.ProgressDialogFragment;
@@ -31,7 +32,8 @@ import okio.BufferedSource;
 import retrofit2.HttpException;
 import retrofit2.Response;
 
-public abstract class BaseSampleAppCompatActivity extends SampleAppCompatActivity implements ILoadingView {
+@Exclude
+public abstract class BaseSampleAppCompatActivity extends AppCompatActivity implements ILoadingView {
 
     protected ProgressDialogFragment progressDialog = ProgressDialogFragment.Companion.newInstance("加载中...");
 

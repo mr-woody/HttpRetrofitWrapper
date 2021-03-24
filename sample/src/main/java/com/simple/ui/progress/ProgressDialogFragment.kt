@@ -11,12 +11,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.cz.android.sample.api.Exclude
 import com.simple.R
 
 /**
  * Created by cz on 17/12/13.
  * 一个旋转进度对话框
  */
+@Exclude
 class ProgressDialogFragment : DialogFragment() {
     private val TAG= ProgressDialogFragment::class.java.simpleName
 

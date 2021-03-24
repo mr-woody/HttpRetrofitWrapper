@@ -2,6 +2,7 @@ package com.simple.ui
 
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import com.cz.android.sample.api.RefRegister
 import com.woodys.http.RetrofitWrapperManager
 import com.woodys.http.core.Call
 import com.woodys.http.core.exception.HttpError
@@ -15,6 +16,7 @@ import retrofit2.Response
 import java.io.InputStream
 
 
+@RefRegister(title=R.string.general_download_image_sample,desc=R.string.general_download_image_sample_desc,category = R.string.general_download_category,priority = 2)
 class DownloadImageActivity : BaseSampleAppCompatActivity() {
     override fun onActivityCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_download_image_view)

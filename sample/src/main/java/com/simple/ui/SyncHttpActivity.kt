@@ -2,15 +2,17 @@ package com.simple.ui
 
 import android.arch.lifecycle.Lifecycle
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import com.cz.android.sample.api.RefRegister
 import com.woodys.http.RetrofitWrapperManager
 import com.woodys.http.scheduler.ThreadTaskExecutor
-import com.okay.sampletamplate.SampleAppCompatActivity
 import com.simple.R
 import com.simple.net.protocol.CommonApiService
 import kotlinx.android.synthetic.main.activity_synchro_http_view.*
 
-class SyncHttpActivity : SampleAppCompatActivity() {
+@RefRegister(title=R.string.general_sync_sample,desc=R.string.general_sync_sample_desc,category = R.string.general_category,priority = 2)
+class SyncHttpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

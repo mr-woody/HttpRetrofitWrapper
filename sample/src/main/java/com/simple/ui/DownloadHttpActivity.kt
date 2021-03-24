@@ -3,6 +3,8 @@ package com.simple.ui
 import android.os.Bundle
 import android.text.format.Formatter
 import android.widget.Toast
+import com.cz.android.sample.api.RefCategory
+import com.cz.android.sample.api.RefRegister
 import com.woodys.http.RetrofitWrapperManager
 import com.woodys.http.core.download.DownloadCall
 import com.woodys.http.core.download.DownloadCallback
@@ -17,6 +19,8 @@ import java.io.File
 import java.io.IOException
 import java.text.NumberFormat
 
+@RefCategory(title=R.string.general_download_category,desc = R.string.general_download_category_desc, priority = 2)
+@RefRegister(title=R.string.general_download_sample,desc=R.string.general_download_sample_desc,category = R.string.general_download_category,priority = 1)
 class DownloadHttpActivity : BaseSampleAppCompatActivity() {
     private var numberFormat: NumberFormat? = null
     override fun onActivityCreate(savedInstanceState: Bundle?) {
