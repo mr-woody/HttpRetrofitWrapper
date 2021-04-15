@@ -65,7 +65,7 @@ allprojects {
 ```
 dependencies {
     ......
-    implementation "com.github.mr-woody.HttpRetrofitWrapper:library:1.0.0"
+    implementation "com.github.mr-woody:HttpRetrofitWrapper:1.0.0"
 }
 
 ```

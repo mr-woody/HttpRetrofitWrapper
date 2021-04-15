@@ -52,10 +52,4 @@ jitpack{
         //对应格式为com.github.[YourUsername],例如：https://github.com/mr-woody/UploadMavenPlugin ,那么对应的UserName为：mr-woody
         group "com.github.mr-woody"
     }
-    module{
-        //对应的library name
-        name "sample"
-        //对应格式为com.github.[YourUsername],例如：https://github.com/mr-woody/UploadMavenPlugin ,那么对应的UserName为：mr-woody
-        group "com.github.mr-woody"
-    }
 }
